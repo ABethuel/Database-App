@@ -1,0 +1,65 @@
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/helpButton"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="136dp"
+        android:text="Help" />
+
+    <Button
+        android:id="@+id/backToMainActivityButton"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="186dp"
+        android:text="Main Menu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="348dp"
+        android:layout_height="219dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:text="Formula 1 drivers are warriors. The death of forty-four of them since the
+creation of the discipline bear witness to this. These departed heroes such as
+Ascari, Cevert, Bianchi or Senna never cease to inspire us. For 70 years,
+drivers have faced risks and death to entertain us and develop the cars of
+tomorrow. From Fangio to Hamilton, through Prost and Schumacher, you will be
+able to find all the world champion drivers in this app!"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="About the app"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>
