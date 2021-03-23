@@ -98,31 +98,4 @@ public class Database extends SQLiteAssetHelper {
         }
         return result;
     }
-
-    public List<Drivers> getDriverByYear(String year)
-    {
-        SQLiteDatabase db = getReadableDatabase();
-        SQLiteQueryBuilder qb = new SQLiteQueryBuilder();
-
-        String[] sqlSelect={"id", "Year", "Name", "Nationality", "Team"};
-        String tableName="Formula1WC";
-
-        qb.setTables(tableName);
-        Cursor cursor = qb.query(db, sqlSelect, "Name LIKE ?", new String[] {"%"+year+"%"},null, null, null );
-        List<Drivers> result = new ArrayList<>();
-        if (cursor.moveToFirst())
-        {
-            do {
-                Drivers driver = new Drivers();
-                driver.setId(cursor.getInt(cursor.getColumnIndex("id")));
-                driver.setYear(cursor.getString(cursor.getColumnIndex("Year")));
-                driver.setName(cursor.getString(cursor.getColumnIndex("Name")));
-                driver.setNationality(cursor.getString(cursor.getColumnIndex("Nationality")));
-                driver.setTeam(cursor.getString(cursor.getColumnIndex("Team")));
-
-                result.add(driver);
-            }while (cursor.moveToNext());
-        }
-        return result;
-    }
 }
