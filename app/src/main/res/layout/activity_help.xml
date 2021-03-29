@@ -10,41 +10,17 @@
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/aboutButton"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="87dp"
-        android:layout_marginRight="87dp"
-        android:layout_marginBottom="136dp"
-        android:text="About the App" />
-
-    <Button
-        android:id="@+id/backToMainActivityButton"
-        android:layout_width="207dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="87dp"
-        android:layout_marginRight="87dp"
-        android:layout_marginBottom="186dp"
-        android:gravity="center_horizontal"
-        android:text="Main Menu" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="348dp"
+        android:layout_height="219dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="190dp"
         android:gravity="center"
-        android:text="You want to find ou in which year and with which team a driver won an F1 world
+        android:text="You want to find out in which year and with which team a driver won an F1 world
 championship? Type his name in the search bar and hall this information will appear on the screen!"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -56,4 +32,23 @@ championship? Type his name in the search bar and hall this information will app
         android:text="Help"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/backToMainActivityButton"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:text="Main Menu" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backToMainActivityButton"
+        android:layout_centerHorizontal="true"
+        android:text="About the App" />
+
+
 </RelativeLayout>
